@@ -1,0 +1,18 @@
+.btnWrapper {
+  margin-bottom: 20px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+[type='button'] {
+  padding: 5px 15px;
+  font-size: 20px;
+  background-color: rgb(126, 50, 150);
+  color: aliceblue;
+
+  transition: background-color 250ms ease, transform 250ms ease;
+}
+[type='button']:hover {
+  background-color: rgb(162, 63, 192);
+  transform: scale(1.1);
+}

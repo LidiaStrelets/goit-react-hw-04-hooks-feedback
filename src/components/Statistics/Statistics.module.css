@@ -1,0 +1,20 @@
+.stats {
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 30px;
+}
+.statItem:not(:last-child) {
+  margin-bottom: 5px;
+}
+.number {
+  display: inline-block;
+  font-weight: bold;
+  color: rgb(126, 50, 150);
+
+  transition: transform 250ms ease;
+}
+.statItem:hover .number {
+  transform: scale(1.2);
+}
