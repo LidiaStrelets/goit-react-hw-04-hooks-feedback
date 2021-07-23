@@ -33,7 +33,11 @@ const FeedbackSection = ({
 );
 
 FeedbackSection.propTypes = {
-  increaseValue: PropTypes.func.isRequired,
+  increaseValue: PropTypes.exact({
+    good: PropTypes.func.isRequired,
+    neutral: PropTypes.func.isRequired,
+    bad: PropTypes.func.isRequired,
+  }),
   countTotalFeedback: PropTypes.func.isRequired,
   countPositiveFeedbackPercentage: PropTypes.func.isRequired,
   good: PropTypes.number.isRequired,

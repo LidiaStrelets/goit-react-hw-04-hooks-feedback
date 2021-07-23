@@ -5,12 +5,7 @@ import styles from './FeedbackOptions.module.css';
 const FeedbackOptions = ({ increaseValue, options }) => (
   <div className={styles.btnWrapper}>
     {options.map((option, index) => (
-      <button
-        key={index}
-        className={styles.btn}
-        type="button"
-        onClick={() => increaseValue(option)}
-      >
+      <button key={index} className={styles.btn} type="button" onClick={increaseValue[option]}>
         {option}
       </button>
     ))}
@@ -18,7 +13,11 @@ const FeedbackOptions = ({ increaseValue, options }) => (
 );
 
 FeedbackOptions.propTypes = {
-  increaseValue: PropTypes.func.isRequired,
+  increaseValue: PropTypes.exact({
+    good: PropTypes.func.isRequired,
+    neutral: PropTypes.func.isRequired,
+    bad: PropTypes.func.isRequired,
+  }),
   options: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 

@@ -2,7 +2,7 @@
   "name": "goit-react-hw-02-feedbac",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://LidiaStrelets.github.io/goit-react-hw-02-feedbac",
+  "homepage": "https://LidiaStrelets.github.io/goit-react-hw-04-hooks-feedback",
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
